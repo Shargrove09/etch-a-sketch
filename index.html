@@ -5,8 +5,41 @@
     <title>Etch-a-sketch</title>
   </head>
   <body>
+    <div id="title">Etch-a-sketch</div>
     <main>
-      <button id="clear-btn">Clear</button>
+      <div id="toolbar">
+        <button class="toolbar-child button" id="clear-btn">Clear</button>
+        <input
+          class="toolbar-child"
+          type="range"
+          min="1"
+          max="100"
+          value="16"
+          id="gridSlider"
+        />
+        <output class="toolbar-child" id="gridValue">16 x 16</output>
+        <input type="color" id="colorPicker" />
+        <div id="rainbowDiv">
+          <input type="checkbox" id="rainbowCheckbox" name="rainbowCheckbox" />
+          <label class="toolbar-child" for="rainbowCheckbox"
+            >Rainbow Mode</label
+          >
+        </div>
+        <div id="eraserDiv">
+          <input type="checkbox" id="eraserCheckbox" name="eraserCheckbox" />
+          <label class="toolbar-child" for="eraserCheckbox">Eraser</label>
+        </div>
+        <div id="gridDiv">
+          <input
+            type="checkbox"
+            id="gridCheckbox"
+            name="gridCheckbox"
+            checked
+          />
+          <label class="toolbar-child" for="gridCheckbox">Grid Lines</label>
+        </div>
+      </div>
+
       <div id="grid"></div>
     </main>
   </body>
