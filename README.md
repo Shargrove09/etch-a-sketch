@@ -13,4 +13,7 @@ Hold and drag mouse (left-click) to draw on canvas.
 - Clear Grid 
 - Show/Hide Grid Lines
 
+### Example Sketch
+
+<img src="example_screenshot.png" alt="drawing" width="600"/>
 
